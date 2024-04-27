@@ -4,7 +4,7 @@
     import Dakstrum from "./Dakstrum.svelte";
 </script>
 
-<div class="grid grid-cols-2 p-2 sm:p-12">
+<div class="grid grid-cols-2">
     <div class="flex flex-row">
         <Dakstrum/>
     </div>
