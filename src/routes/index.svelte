@@ -1,12 +1,23 @@
 
 <script lang="ts">
-    import Code from '../assets/code.jpg'
+    import icon from '../assets/icon.png';
+    import LatestYoutube from './LatestYoutube.svelte';
+    import FirstSegment from './_FirstSegment.svelte';
 </script>
+
+<svelte:head>
+    <title>Dakstrum</title>
+    <link rel="icon" type="image/png" href={icon}>
+</svelte:head>
 
 <div class="flex flex-col">
     <div class="md:h-8 h-16"></div>
     <div class="flex flex-col">
-        <img src={Code} alt="code" class="md:w-1/2 border-2 border-violet-800 rounded-md shadow-lg mx-auto hidden md:block"/>
-        <div class="md:text-4xl text-2xl text-center">Creating reliable software since 2017.</div>
+        <FirstSegment/>
+        <LatestYoutube/>
     </div>
 </div>
+
+<style>
+
+</style>

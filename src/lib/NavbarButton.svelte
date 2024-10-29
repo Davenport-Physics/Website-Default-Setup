@@ -6,17 +6,17 @@
 
 </script>
 
-<a href={href} class="text-2xl link">{text}</a>
+<a href={href} class="text-2xl link ">{text}</a>
 
 <style>
 
     .link:hover {
-        color: #000;
+        color: white;
     }
 
     .link {
         position: relative;
-        color: #000;
+        color: white;
         text-decoration: none;
     }
 
@@ -28,7 +28,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #000;
+        background-color: white;
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }

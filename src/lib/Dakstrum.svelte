@@ -4,6 +4,6 @@
 </script>
 
 <a class="flex flex-row cursor-pointer gap-2" href="/">
-    <img src={icon} alt="icon" class="h-12 w-12"/>
-    <div class="text-4xl">Dakstrum</div>
+    <img src={icon} alt="icon" class="h-12 w-12 rounded-full shadow"/>
+    <div class="text-4xl text-white">Dakstrum</div>
 </a>
