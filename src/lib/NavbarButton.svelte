@@ -11,12 +11,12 @@
 <style>
 
     .link:hover {
-        color: white;
+        color: #7e22ce;
     }
 
     .link {
         position: relative;
-        color: white;
+        color: #7e22ce;
         text-decoration: none;
     }
 
@@ -28,7 +28,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: white;
+        background-color: #7e22ce;
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
