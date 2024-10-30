@@ -2,8 +2,10 @@
 <script lang="ts">
     import icon from '../assets/icon.png';
     import LatestYoutube from './LatestYoutube.svelte';
+    import Chator from './_Chator.svelte';
     import FirstSegment from './_FirstSegment.svelte';
     import OpenSource from './_OpenSource.svelte';
+    import SingleSegment from './_SingleSegment.svelte';
 </script>
 
 <svelte:head>
@@ -15,9 +17,13 @@
 <div class="flex flex-col">
     <div class="md:h-8 h-16"></div>
     <div class="flex flex-col">
-        <FirstSegment/>
-        <OpenSource/>
-        <LatestYoutube/>
+        <Chator/>
+        <SingleSegment/>
+        <!--
+            <FirstSegment/>
+            <OpenSource/>
+            <LatestYoutube/>
+        -->
     </div>
 </div>
 

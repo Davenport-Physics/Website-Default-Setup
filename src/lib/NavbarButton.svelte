@@ -11,12 +11,12 @@
 <style>
 
     .link:hover {
-        color: #7e22ce;
+        color: black;
     }
 
     .link {
         position: relative;
-        color: #7e22ce;
+        color: black;
         text-decoration: none;
     }
 

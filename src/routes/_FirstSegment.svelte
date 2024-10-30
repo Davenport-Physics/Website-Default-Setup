@@ -5,12 +5,20 @@
 
 </script>
 
-<div class="p-2 h-svh">
-    <div class="flex flex-row gap-2">
-        <div class="flex flex-col gap-4 justify-center items-center">
-            <p class="text-purple-600 text-6xl text-center">Creating reliable software since 2021!</p>
-        </div>
-        <img src={Code2} alt="code" class="md:w-1/2 rounded-md shadow-xl mx-auto"/>
+<div class="p-2 h-svh background-img">
+    <div class="flex flex-col items-center justify-center h-full">
+        <span class="text-purple-600 sm:text-6xl text-3xl text-center bg-white w-1/2 rounded-t-lg rounded-r-lg p-2 shadow-md">
+            Creating reliable software since 
+            <span class="">2021</span>
+        </span>
     </div>
 </div>
 <div class="sm:h-12 h-0"></div>
+
+<style>
+    .background-img {
+        background-image: url('../assets/code-stock.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
