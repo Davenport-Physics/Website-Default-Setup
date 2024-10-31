@@ -1,30 +1,38 @@
 
 <script lang="ts">
 
+    import { fade } from 'svelte/transition';
     import Dakstrum from '../components/Dakstrum.svelte';
     import { url } from '@roxi/routify';
+    import { onMount } from 'svelte';
+
+    let show = false;
 
     function on_contact_click() {
 
     }
 
+    onMount(() => {
+        show = true;
+    })
+
 </script>
 
-<div class="flex flex-col items-center justify-center h-size">
-
-    <Dakstrum/>
-    <div class="h-6"></div>
-    <span class="text-black sm:text-2xl text-xl text-center bg-white w-1/2">
-        Creating open-source software since 
-        <span class="">2021</span>
-    </span>
-    <div class="h-6"></div>
-    <div class="flex flex-row gap-2">
-        <a href={$url("/projects")} class="link px-2 text-2xl">Projects</a>
-        <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>Contact</button>
+{#if show}
+    <div transition:fade={{duration: 500}} class="flex flex-col items-center justify-center h-size">
+        <Dakstrum/>
+        <div class="h-6"></div>
+        <span class="text-black sm:text-2xl text-xl text-center bg-white w-1/2">
+            Creating open-source software since 
+            <span class="">2021</span>
+        </span>
+        <div class="h-6"></div>
+        <div class="flex flex-row gap-2">
+            <a href={$url("/projects")} class="link px-2 text-2xl">~$cd Projects</a>
+            <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>~$cd Contact</button>
+        </div>
     </div>
-
-</div>
+{/if}
 
 <style>
 
