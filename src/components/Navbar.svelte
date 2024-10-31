@@ -1,12 +1,12 @@
 
 <script lang="ts">
     import NavbarButton from "./NavbarButton.svelte";
-    import Dakstrum from "./Dakstrum.svelte";
+    import DakstrumNavbar from "./DakstrumNavbar.svelte";
 </script>
 
 <div class="grid grid-cols-2">
     <div class="flex flex-row">
-        <Dakstrum/>
+        <DakstrumNavbar/>
     </div>
     <div class="flex flex-row-reverse gap-4">
         <NavbarButton text="Contact" href="/contact"/>

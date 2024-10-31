@@ -10,7 +10,7 @@
     let show_nav = false;
 
     function set_show_nav(path: string) {
-        show_nav = path !== "/";
+        show_nav = path !== "/" && path.length !== 0;
     }
 
     onMount(() => {
