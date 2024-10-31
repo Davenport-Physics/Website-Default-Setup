@@ -20,21 +20,13 @@
     </span>
     <div class="h-6"></div>
     <div class="flex flex-row gap-2">
-
         <a href={$url("/projects")} class="link px-2 text-2xl">Projects</a>
         <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>Contact</button>
-
     </div>
 
 </div>
 
 <style>
-
-    .background-img {
-        background-image: url('../assets/code-stock.jpg');
-        background-size: cover;
-        background-position: center;
-    }
 
     .h-size {
         height: 80vh;

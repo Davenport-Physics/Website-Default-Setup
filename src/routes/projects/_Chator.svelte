@@ -3,7 +3,7 @@
 
     import { GithubLogo } from "phosphor-svelte";
     import chator from "../assets/chator-icon.png";
-    import IconLink from "../components/IconLink.svelte";
+    import IconLink from "../../components/IconLink.svelte";
     import itch from "../assets/itchio.svg";
 
 </script>
