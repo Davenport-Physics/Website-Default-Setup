@@ -1,9 +1,10 @@
 
 <script lang="ts">
+
     import Navbar from "../lib/Navbar.svelte";
     import Footer from "../lib/Footer.svelte";
-
     //bg-gradient-to-r from-violet-800 to-violet-600
+
 </script>
 
 <div class="">
