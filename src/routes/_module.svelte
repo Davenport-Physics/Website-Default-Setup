@@ -1,6 +1,7 @@
 
 <script lang="ts">
 
+    import icon from '../assets/icon.png';
     import Navbar from "../components/Navbar.svelte";
     import Footer from "../components/Footer.svelte";
     import { onMount } from "svelte";
@@ -22,6 +23,12 @@
     });
 
 </script>
+
+<svelte:head>
+    <title>Dakstrum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href={icon}>
+</svelte:head>
 
 <div class="">
     <div class="flex flex-col min-h-screen p-2 sm:p-12">
