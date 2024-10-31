@@ -16,9 +16,9 @@
     <div class="md:h-8 h-16"></div>
     <div class="">
         <FirstSegment/>
-        <Chator/>
-        <SingleSegment/>
         <!--
+            <Chator/>
+            <SingleSegment/>
             <FirstSegment/>
             <OpenSource/>
             <LatestYoutube/>
