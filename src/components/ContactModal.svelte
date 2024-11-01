@@ -28,9 +28,10 @@
 
             <p class="text-black text-2xl select-none">Email</p>
             <div class="h-2"></div>
-            <div class="text-black text-2xl flex flex-row gap-2 justify-center hover:text-purple-800">
-                <Envelope size={36}/>
-                <a href="mailto:social@dakstrum.com" class="">social@dakstrum.com</a>
+            <div class="text-black text-2xl hover:text-purple-800"> 
+                <a href="mailto:social@dakstrum.com" class="flex flex-row gap-2 justify-center">
+                    <Envelope size={36}/> social@dakstrum.com
+                </a>
             </div>
 
         </div>

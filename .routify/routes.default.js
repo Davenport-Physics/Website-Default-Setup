@@ -78,6 +78,22 @@ export default {
       "children": []
     },
     {
+      "meta": {
+        "noRoute": true
+      },
+      "id": "_default__SingleSegment_svelte",
+      "name": "_SingleSegment",
+      "file": {
+        "path": "src/routes/_SingleSegment.svelte",
+        "dir": "src/routes",
+        "base": "_SingleSegment.svelte",
+        "ext": ".svelte",
+        "name": "_SingleSegment"
+      },
+      "asyncModule": () => import('../src/routes/_SingleSegment.svelte'),
+      "children": []
+    },
+    {
       "meta": {},
       "id": "_default_about",
       "name": "about",
@@ -154,6 +170,69 @@ export default {
       },
       "asyncModule": () => import('../src/routes/index.svelte'),
       "children": []
+    },
+    {
+      "meta": {},
+      "id": "_default_projects",
+      "name": "projects",
+      "module": false,
+      "file": {
+        "path": "src/routes/projects",
+        "dir": "src/routes",
+        "base": "projects",
+        "ext": "",
+        "name": "projects"
+      },
+      "children": [
+        {
+          "meta": {
+            "noRoute": true
+          },
+          "id": "_default_projects__Chator_svelte",
+          "name": "_Chator",
+          "file": {
+            "path": "src/routes/projects/_Chator.svelte",
+            "dir": "src/routes/projects",
+            "base": "_Chator.svelte",
+            "ext": ".svelte",
+            "name": "_Chator"
+          },
+          "asyncModule": () => import('../src/routes/projects/_Chator.svelte'),
+          "children": []
+        },
+        {
+          "meta": {
+            "noRoute": true
+          },
+          "id": "_default_projects__ProjectStocks_svelte",
+          "name": "_ProjectStocks",
+          "file": {
+            "path": "src/routes/projects/_ProjectStocks.svelte",
+            "dir": "src/routes/projects",
+            "base": "_ProjectStocks.svelte",
+            "ext": ".svelte",
+            "name": "_ProjectStocks"
+          },
+          "asyncModule": () => import('../src/routes/projects/_ProjectStocks.svelte'),
+          "children": []
+        },
+        {
+          "meta": {
+            "isDefault": true
+          },
+          "id": "_default_projects_index_svelte",
+          "name": "index",
+          "file": {
+            "path": "src/routes/projects/index.svelte",
+            "dir": "src/routes/projects",
+            "base": "index.svelte",
+            "ext": ".svelte",
+            "name": "index"
+          },
+          "asyncModule": () => import('../src/routes/projects/index.svelte'),
+          "children": []
+        }
+      ]
     },
     {
       "meta": {
