@@ -21,7 +21,7 @@
             <p class="text-4xl">ChaTOR</p>
             <div class="h-2"></div>
             <p class="text-xl">
-                A Free-Software Chat Client that runs in conjuction to Star Wars: The Old Republic.
+                A Free-Software chat client, purpose built for the Star Wars: The Old Republic Roleplay Community.
             </p>
             <p>ChaTOR is pronounced "Chatter"</p>
 

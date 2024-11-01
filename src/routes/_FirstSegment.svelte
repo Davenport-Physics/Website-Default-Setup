@@ -27,8 +27,7 @@
             <Dakstrum/>
             <div class="h-6"></div>
             <span class="text-black sm:text-2xl text-xl text-center bg-white w-1/2">
-                Creating open-source software since 
-                <span class="">2021</span>
+                Creating open-source software since 2021
             </span>
             <div class="h-6"></div>
             <div class="flex flex-row gap-2">
