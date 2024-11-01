@@ -15,7 +15,7 @@
 {#if show_modal}
     <div 
         transition:fly={{duration: 500, y: -500}} 
-        class="fixed z-10 w-96 h-52 border-2 border-purple-800 bg-white rounded-lg shadow-md modal-position flex flex-col">
+        class="fixed z-10 w-96 h-48 border-2 border-purple-800 bg-white rounded-lg shadow-md modal-position flex flex-col">
         <div class="absolute w-full">
             <button 
                 type="button" on:click={on_close}
@@ -24,8 +24,6 @@
             </button>
         </div>
         <div class="px-2 flex flex-col items-center h-full justify-center">
-            <p class="text-black text-2xl select-none">Email</p>
-            <div class="h-2"></div>
             <div class="text-black text-2xl hover:text-purple-800"> 
                 <a href="mailto:social@dakstrum.com" class="flex flex-row gap-2 justify-center">
                     <Envelope size={36}/> social@dakstrum.com
