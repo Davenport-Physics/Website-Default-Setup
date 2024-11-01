@@ -16,36 +16,6 @@ export default {
   "routifyDir": import.meta.url,
   "children": [
     {
-      "meta": {},
-      "id": "_default_LatestYoutube_svelte",
-      "name": "LatestYoutube",
-      "file": {
-        "path": "src/routes/LatestYoutube.svelte",
-        "dir": "src/routes",
-        "base": "LatestYoutube.svelte",
-        "ext": ".svelte",
-        "name": "LatestYoutube"
-      },
-      "asyncModule": () => import('../src/routes/LatestYoutube.svelte'),
-      "children": []
-    },
-    {
-      "meta": {
-        "noRoute": true
-      },
-      "id": "_default__ContactModal_svelte",
-      "name": "_ContactModal",
-      "file": {
-        "path": "src/routes/_ContactModal.svelte",
-        "dir": "src/routes",
-        "base": "_ContactModal.svelte",
-        "ext": ".svelte",
-        "name": "_ContactModal"
-      },
-      "asyncModule": () => import('../src/routes/_ContactModal.svelte'),
-      "children": []
-    },
-    {
       "meta": {
         "noRoute": true
       },
@@ -59,38 +29,6 @@ export default {
         "name": "_FirstSegment"
       },
       "asyncModule": () => import('../src/routes/_FirstSegment.svelte'),
-      "children": []
-    },
-    {
-      "meta": {
-        "noRoute": true
-      },
-      "id": "_default__OpenSource_svelte",
-      "name": "_OpenSource",
-      "file": {
-        "path": "src/routes/_OpenSource.svelte",
-        "dir": "src/routes",
-        "base": "_OpenSource.svelte",
-        "ext": ".svelte",
-        "name": "_OpenSource"
-      },
-      "asyncModule": () => import('../src/routes/_OpenSource.svelte'),
-      "children": []
-    },
-    {
-      "meta": {
-        "noRoute": true
-      },
-      "id": "_default__SingleSegment_svelte",
-      "name": "_SingleSegment",
-      "file": {
-        "path": "src/routes/_SingleSegment.svelte",
-        "dir": "src/routes",
-        "base": "_SingleSegment.svelte",
-        "ext": ".svelte",
-        "name": "_SingleSegment"
-      },
-      "asyncModule": () => import('../src/routes/_SingleSegment.svelte'),
       "children": []
     },
     {

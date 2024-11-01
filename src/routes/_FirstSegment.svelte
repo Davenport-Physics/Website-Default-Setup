@@ -6,6 +6,7 @@
     import { url } from '@roxi/routify';
     import { onMount } from 'svelte';
     import ContactModal from '../components/ContactModal.svelte';
+    import SinglePageContainer from '../components/SinglePageContainer.svelte';
 
     let show = false;
     let show_modal: boolean = false;
@@ -21,18 +22,20 @@
 </script>
 
 {#if show}
-    <div transition:fade={{duration: 500}} class="flex flex-col items-center justify-center h-size">
-        <Dakstrum/>
-        <div class="h-6"></div>
-        <span class="text-black sm:text-2xl text-xl text-center bg-white w-1/2">
-            Creating open-source software since 
-            <span class="">2021</span>
-        </span>
-        <div class="h-6"></div>
-        <div class="flex flex-row gap-2">
-            <a href={$url("/projects")} class="link px-2 text-2xl">~$ cd Projects</a>
-            <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>~$ cat Contact</button>
-        </div>
+    <div transition:fade={{duration: 500}}>
+        <SinglePageContainer>
+            <Dakstrum/>
+            <div class="h-6"></div>
+            <span class="text-black sm:text-2xl text-xl text-center bg-white w-1/2">
+                Creating open-source software since 
+                <span class="">2021</span>
+            </span>
+            <div class="h-6"></div>
+            <div class="flex flex-row gap-2">
+                <a href={$url("/projects")} class="link px-2 text-2xl">~$ cd Projects</a>
+                <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>~$ cat Contact</button>
+            </div>
+        </SinglePageContainer>
     </div>
 {/if}
 
