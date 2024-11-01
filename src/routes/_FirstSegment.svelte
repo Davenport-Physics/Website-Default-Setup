@@ -5,11 +5,13 @@
     import Dakstrum from '../components/Dakstrum.svelte';
     import { url } from '@roxi/routify';
     import { onMount } from 'svelte';
+    import ContactModal from '../components/ContactModal.svelte';
 
     let show = false;
+    let show_modal: boolean = false;
 
     function on_contact_click() {
-
+        show_modal = true;
     }
 
     onMount(() => {
@@ -28,11 +30,13 @@
         </span>
         <div class="h-6"></div>
         <div class="flex flex-row gap-2">
-            <a href={$url("/projects")} class="link px-2 text-2xl">~$cd Projects</a>
-            <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>~$cd Contact</button>
+            <a href={$url("/projects")} class="link px-2 text-2xl">~$ cd Projects</a>
+            <button type="button" class="link px-2 text-2xl" on:click={on_contact_click}>~$ cat Contact</button>
         </div>
     </div>
 {/if}
+
+<ContactModal bind:show_modal/>
 
 <style>
 

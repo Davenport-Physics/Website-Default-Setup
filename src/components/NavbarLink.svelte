@@ -1,22 +1,12 @@
 
 <script lang="ts">
-    
-    import { createEventDispatcher } from "svelte";
+
     export let text: string;
-
-    const dispatch = createEventDispatcher();
-
-    function on_click() {
-        dispatch("click");
-    }
+    export let href: string;
 
 </script>
 
-<button class="text-2xl link" on:click={on_click}>
-    <div class="relative -top-2">
-        {text}
-    </div>
-</button>
+<a href={href} class="text-2xl link">{text}</a>
 
 <style>
 
