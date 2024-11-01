@@ -3,6 +3,7 @@
 
     import { Mailbox, Envelope, DiscordLogo } from "phosphor-svelte";
     import { fly } from "svelte/transition";
+    import { click_outside_handler } from "../lib/click_outside";
 
     export let show_modal: boolean;
 
@@ -15,7 +16,8 @@
 {#if show_modal}
     <div 
         transition:fly={{duration: 500, y: -500}} 
-        class="fixed z-10 w-96 h-48 border-2 border-purple-800 bg-white rounded-lg shadow-md modal-position flex flex-col">
+        class="fixed z-10 w-96 h-48 border-2 border-purple-800 bg-white rounded-lg shadow-md modal-position flex flex-col"
+        use:click_outside_handler={on_close}>
         <div class="absolute w-full">
             <button 
                 type="button" on:click={on_close}
@@ -34,12 +36,10 @@
 {/if}
 
 <style>
-
     .modal-position {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
 </style>
