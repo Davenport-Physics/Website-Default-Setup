@@ -126,6 +126,22 @@ export default {
           "meta": {
             "noRoute": true
           },
+          "id": "_default_projects__CenterButton_svelte",
+          "name": "_CenterButton",
+          "file": {
+            "path": "src/routes/projects/_CenterButton.svelte",
+            "dir": "src/routes/projects",
+            "base": "_CenterButton.svelte",
+            "ext": ".svelte",
+            "name": "_CenterButton"
+          },
+          "asyncModule": () => import('../src/routes/projects/_CenterButton.svelte'),
+          "children": []
+        },
+        {
+          "meta": {
+            "noRoute": true
+          },
           "id": "_default_projects__Chator_svelte",
           "name": "_Chator",
           "file": {
